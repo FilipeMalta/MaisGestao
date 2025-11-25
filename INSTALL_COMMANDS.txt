@@ -1,0 +1,31 @@
+# Comandos de Instalação e Configuração
+
+# 1. Instalar dependência de acessibilidade
+npm install --save-dev @axe-core/playwright
+
+# 2. Instalar navegadores do Playwright
+npx playwright install
+
+# 3. Instalar navegadores com dependências do sistema
+npx playwright install --with-deps
+
+# 4. Executar todos os testes
+npx playwright test
+
+# 5. Executar testes em modo UI (interativo)
+npx playwright test --ui
+
+# 6. Executar apenas um arquivo de teste
+npx playwright test 01-landing-page
+
+# 7. Executar testes em um navegador específico
+npx playwright test --project=chromium
+
+# 8. Gerar e visualizar relatório
+npx playwright show-report
+
+# 9. Executar em modo debug
+npx playwright test --debug
+
+# 10. Executar apenas testes que falharam
+npx playwright test --last-failed
